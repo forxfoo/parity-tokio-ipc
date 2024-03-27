@@ -30,6 +30,7 @@ fn create_server(path: &str, first: bool, attr: *mut libc::c_void) -> io::Result
             .out_buffer_size(65536)
             .in_buffer_size(65536)
             .first_pipe_instance(first)
+            .pipe_mode(PipeMode::Message)
             .create_with_security_attributes_raw(path, attr)
     }
 }
