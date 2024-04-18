@@ -23,4 +23,4 @@ winapi = { version = "0.3.9", features = ["winbase", "winnt", "accctrl", "aclapi
 miow = "0.6"
 
 [patch.crates-io]
-# mio = { git = "https://github.com/tokio-rs/mio", rev = "ac406235e8e12b95f9b500c6200410ffd89ff10f" }
+mio = { git = "https://github.com/tokio-rs/mio", rev = "ac406235e8e12b95f9b500c6200410ffd89ff10f" }
